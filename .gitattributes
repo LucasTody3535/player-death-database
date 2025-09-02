@@ -1,0 +1,2 @@
+# Guarantee that lf is used when committing
+*   text=auto eol=lf
