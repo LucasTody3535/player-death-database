@@ -9,6 +9,9 @@ export class DeathRecord {
   coordinates: number[];
 
   @Prop()
+  location: string;
+
+  @Prop()
   hour: number;
 
   @Prop()
