@@ -5,8 +5,8 @@ export type DeathRecordDocument = HydratedDocument<DeathRecord>;
 
 @Schema()
 export class DeathRecord {
-  @Prop([String])
-  coordinates: string[];
+  @Prop([Number])
+  coordinates: number[];
 
   @Prop()
   hour: number;
