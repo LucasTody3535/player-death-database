@@ -27,7 +27,7 @@ The api allows storing the following data about each player's death:
 {
   "coordinates": [0, 0, 0],
   "location": "America",
-  "hour": 120,
+  "minutes": 120,
   "username": "name",
   "map": "map_name",
   "items": [
@@ -37,7 +37,7 @@ The api allows storing the following data about each player's death:
 }
 ```
 
-The hour is stored as minutes and the coordinates are respectively x, y and z.
+The time is stored as minutes counting from 00:00 of the actual day and the coordinates are respectively x, y and z.
 
 After validated, the data is then stored in a Mongo Database. When requested from the Frontend, the data can be removed from
 the database, meaning the "player's corpse" was looted.

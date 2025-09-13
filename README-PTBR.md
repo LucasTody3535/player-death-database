@@ -22,7 +22,7 @@ A api permite o armazenamento dos seguintes dados relacionados a morte do jogado
 {
   "coordinates": [0, 0, 0],
   "location": "America",
-  "hour": 1300,
+  "minutes": 1300,
   "username": "nome",
   "map": "nome_do_mapa",
   "items": [
@@ -32,7 +32,7 @@ A api permite o armazenamento dos seguintes dados relacionados a morte do jogado
 }
 ```
 
-As horas são armazenadas em minutos e as coordenadas são respectivamente x, y e z.
+O horário é armazenado como minutos desde a 00:00 do dia e as coordenadas são respectivamente x, y e z.
 
 Depois de ser validado, os dados são então armazenados numa base de dados Mongo. Quando requisitado pelo Frontend, os dados podem ser então removidos, significando que o "corpo do jogador" foi saqueado.
 
