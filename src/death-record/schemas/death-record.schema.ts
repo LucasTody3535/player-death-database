@@ -9,7 +9,7 @@ export class DeathRecord {
   constructor(data: CreateDeathRecordDTO) {
     this.coordinates = data.coordinates;
     this.location = data.location;
-    this.hour = data.hour;
+    this.minutes = data.minutes;
     this.username = data.username;
     this.mapName = data.mapName;
   }
@@ -21,7 +21,7 @@ export class DeathRecord {
   location: string;
 
   @Prop()
-  hour: number;
+  minutes: number;
 
   @Prop()
   username: string;

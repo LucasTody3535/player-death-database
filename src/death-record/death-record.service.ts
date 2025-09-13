@@ -22,7 +22,7 @@ export class DeathRecordService {
         $match: {
           mapName: query.mapName,
           location: query.location,
-          hour: { $gte: query.minutes - 60, $lte: query.minutes + 60 },
+          minutes: { $gte: query.minutes - 60, $lte: query.minutes + 60 },
         },
       },
       {

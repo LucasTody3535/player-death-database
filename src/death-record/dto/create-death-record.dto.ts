@@ -1,7 +1,7 @@
 export class CreateDeathRecordDTO {
   coordinates: number[];
   location: string;
-  hour: number;
+  minutes: number;
   username: string;
   mapName: string;
 }
